@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>FrogBother Chat Application</title>
+
+        <!-- Fontawesome -->
+        <script src="https://kit.fontawesome.com/4e8b660432.js" crossorigin="anonymous"></script>
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Girassol|Roboto&display=swap" rel="stylesheet">
+        
+        <!-- Custom css -->
+        <link rel="stylesheet" type="text/css" href="css/style.css"> 
+
+    </head>
+    <body>
+        <!-- Container -->
+        <div class="container">
+
+            <!-- Header -->
+            <header>
+                <img src="images/frog.png" alt="frog" class="frog">
+                <div class="frogbother">
+                    <h1>FrogBother</h1>
+                    <span class="dot">.</span>
+                </div>
+                <div class="vito">
+                    <h3>Vito Croakleone</h3>
+                </div>
+            </header>
+
+            <!-- All content -->
+            <div class="all-content">
+                    
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <!-- Henchmen heading -->
+                    <div class="henchmen">
+                        <h2>Henchmen</h2>
+                    </div>
+
+                    <!-- Henchmen container -->
+                    <div class="henchmen-container">
+                        <!-- Sonny -->
+                        <button id="sonnyId" class="btn select" onclick="selectUser(event)">
+                            <i class="fad fa-frog"></i> 
+                            <span>Sonny</span>
+                        </button>
+                        <!-- Fredo -->
+                        <button id="fredoId" class="btn" onclick="selectUser(event)">
+                            <i class="fad fa-frog"></i> 
+                            <span>Fredo</span>
+                        </button>
+                        <!-- Michael -->
+                        <button id="michaelId" class="btn" onclick="selectUser(event)">
+                            <i class="fad fa-frog"></i> 
+                            <span>Michael</span>
+                        </button>
+                    </div>
+
+                </div>
+                <!-- Sidebar-End -->
+
+                <!-- Main -->
+                <main>
+
+                    <!-- Message history heading -->
+                    <div class="message-history-heading">
+                        <h2>Message History</h2>
+                    </div>
+                    <!-- Message box -->
+                    <div class="message-box"></div>
+
+                    <!-- input and send button area -->
+                    <form class="input-and-send-button">
+                        <input id="inputText" type="text" placeholder ="Please enter your message here...">
+                        <div class="send">
+                            <button class="send-button" onclick="sendMessage(event)">
+                                <i class="fad fa-paper-plane"></i>
+                                <span>Send</span>
+                            </button>
+                        </div>
+                    </form>
+
+                </main>
+                <!-- Main-End -->            
+            </div>
+            <!-- All content-End -->
+        </div>
+        <!-- Container-End -->
+    
+        <!-- script -->
+        <script src="js/script.js"></script>
+    </body>
+</html>
